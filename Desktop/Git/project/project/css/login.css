@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	height: 67px;
+	min-width: 960px;
+	background: #f2f2f2;
+	line-height: 67px;
+}
+.header .head{
+	width: 960px;
+	margin: 0 auto;
+	
+}
+.head h1{
+	width: 143px;
+	float: left;
+	margin-right: 20px;
+}
+.head b{
+	color:#333333;
+	font-size: 18px;
+	margin-top: -5px;
+	margin-right: 20px;
+	float: left;
+}
+.headHint{
+	height: 40px;
+	background: #FFFBE4;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #989898;
+	font-size: 12px;
+}
+.login_bg{
+	height: 590px;
+	 min-width: 1130px;
+background: #081638;
+}
+.login_bg .login_bgMain{
+	height: 590px;
+	width: 1130px;
+	margin: 0 auto;
+	background: url(../img/login_default_bg.png) no-repeat;
+	overflow: hidden;
+	
+}
+.login_bgMain .loginTo{
+	width: 380px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+    height: 530px;
+    position: relative;
+    background: white;
+    float: right;
+}
+.loginTo .loginToup{
+	    width: 100%;
+    margin: 24px auto;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.loginTo .loginToup span{
+	font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 169px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 10px;
+    float: left;
+}
+.loginTodown{
+	width: 328px;
+    margin: 0 auto;
+}
+.loginTodown table{
+	width: 328px;
+}
+td{
+	    border-bottom: 1px solid #cccccc;
+    height: 46px;
+}
+td input{
+	border-bottom: 1px solid #cccccc;
+    height: 46px;
+    border: 0;
+    width: 100%;
+    outline: none;
+}
+ .loginTodown .Login{
+	background-color: #B40707;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #B40707;
+    color: #fff;
+    width: 100%;
+    border-radius: 0px;
+    line-height: 44px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: none;
+    cursor: pointer;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0px;
+}
+/*记住华为账号*/
+.remberNum span{
+	width: 16px;
+	height: 16px;
+	float: left;
+	border: 1px solid #CCCCCC;
+	margin-right: 5px;
+}
+.remberNum a{
+	float:right;
+}
+.remberNum p{
+	font-size: 12px;
+	float: left;
+}
+/*注册账号,忘记密码*/
+.numlogin{
+	border: 0;
+	display: flex;
+	justify-content: center;
+}
+.numlogin a{
+	float: left;
+	margin-right: 10px;
+	color: #007dff;
+	font-size: 12px;
+}
+/*其他支付方式*/
+.loginButtom{
+	margin-top: 100px;
+}
+.loginButtom p{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #cccccc;
+}
+.loginButtom a{
+	display: block;
+	margin-left: 25px;
+}
+.loginButtom a i{
+	font-size: 42px;
+	color: #CCCCCC;
+}
+.loginButtom a:hover i{
+	color: blue;
+}
+/*尾部*/
+.loginFooter{
+	min-height: 42px;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+}
+.loginFooter .loginFoot{
+	padding-top: 20px;
+}
+.loginFoot p:first-child{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+.loginFoot p:first-child a{
+	display: block;
+	padding: 0 10px;
+	border-right: 1px solid black;
+	font-size: 12px;
+}
+.loginFoot p:nth-child(2){
+	margin-bottom: 20px;
+}

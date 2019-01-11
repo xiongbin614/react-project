@@ -1,0 +1,483 @@
+/*商品展示导航栏*/
+.flMain,.proDetails{
+	min-height: 750px;
+	min-width: 1200px;
+	margin-top: 20px;
+	border-bottom: 1px solid #717171;
+}
+.flMain .flMain-nav{
+	height: 28px;
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.flMain .flMain-nav a:first-child{
+	margin-left: 0;
+}
+.flMain .flMain-nav a{
+	margin: 10px;
+	color: #666;
+}
+.flMain .flMain-nav a:hover{
+	color: #333;
+}
+.flMain .flMain-nav span:last-child{
+	margin-left: 10px;
+	color: #333;
+	
+}
+
+/*商品展示,放大镜部分*/
+.mainDetails{
+	width: 1200px;
+	min-height: 680px;
+	margin: 0 auto ;
+}
+/*展示手机左边*/
+.mainDetails .mainDL{
+	min-height: 680px;
+	width: 450px;
+	float: left;
+}
+/*放大镜的小图片*/
+.mainDL .mainDL-img{
+	width: 450px;
+	height: 450px;
+	position: relative;
+}
+.smollmainDL-img img{
+	width: 450px;
+}
+.mainDL-img .smollBox{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	/*background: sandybrown;*/
+	left: 0;
+	top: 0;
+}
+#mask{
+			width: 225px;
+			height: 225px;
+			background: paleturquoise;
+			position: absolute;
+			left:0;
+			top: 0;
+			opacity: 0.3;
+			display: none;
+			cursor: move;
+		}
+
+.mainDL-img .bigBox{
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: white;
+	left: 460px;
+	border: 2px solid #ccc;
+	z-index: 155;
+	overflow: hidden;
+	top: 0;
+}
+#bigImg{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 800px;
+		}
+
+
+
+/*展示图片外观*/
+.mainDL .mainDL-moreimg{
+	width: 450px;
+	height: 68px;
+	margin-top: 18px;
+	box-sizing: border-box;
+	display :flex; 
+	display:-webkit-flex; 
+	align-items:center; 
+	-webkit-align-items:center; 
+	justify-content:space-between;
+}
+/*左右按钮*/
+.mainDL-moreimg .btnLeft,.btnRight{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	text-align: center;
+	border: 2px solid #717171;
+	font-weight: bold;
+}
+/*展示多个手机外观*/
+.mainDL-moreimg .btnCenter{
+	width: 370px;
+	height: 68px;
+}
+.btnCenter li{
+	float: left;
+	height: 68px;
+	width: 68px;
+	padding: 0 3px;
+
+}
+.btnCenter li a{
+	display: block;
+	width: 68px;
+	height: 68px;
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items:center; 
+	
+}
+.btnCenter li img{
+	width: 60px;
+	height: 60px;
+}
+.btnCenter li a:hover{
+	border: 1px solid #ca141d;
+}
+/*展示手机右边*/
+.mainDetails .mainDR{
+	min-height: 680px;
+	width: 700px;
+	float: right;
+}
+/*商品名称*/
+.mainDR .mainDR-title{
+	width: 700px;
+	min-height: 62px;
+}
+/*商品简介*/
+.mainDR-title .describe{
+	min-height: 18px;
+	width:700px ;
+}
+/*商品价格*/
+.mainDR .mainDR-info{
+	width: 700px;
+	min-height: 85px;
+	background: #f5f5f5;
+	padding-top: 14px;
+	padding-bottom: 3px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/*价格*/
+.mainDR-info .price{
+	width: 700px;
+	min-height: 30px;
+
+}
+.mainDR-info .price span{
+	font-size: 24px;
+	color: #ca141d;
+	line-height: 30px;
+	
+}
+.mainDR  label{
+	float: left;
+    width: 85px;
+    text-indent: 10px;
+    line-height: 30px;
+}
+/*促销*/
+.mainDR-info .promotion{
+	width: 700px;
+	min-height: 34px;
+	float: left;
+}
+/*积分*/
+.promotion .integral{
+	float: left;
+	min-height: 30px;
+	width: 615px;
+}
+/*积分一*/
+.integral .integralOne{
+	height: 30px;
+	width: 615px;
+}
+.integralOne em{
+	float: left;
+    line-height: 18px;
+    height: 18px;
+    border: 1px solid #ca141d;
+    padding: 0 6px;
+    min-width: 24px;
+    color: #ca141d;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.integralOne p{
+	float: left;
+    line-height: 1.5;
+    margin-top: 6px;
+    max-width: 485px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    display: block\0;
+    justify-content: center;
+}
+
+/*服务说明*/
+.mainDR .ServiceNote{
+	width: 700px;
+	min-height: 57px;
+	margin-top: 18px;
+	/*overflow: hidden;*/
+	float: left;
+}
+/*服务说明右边*/
+.ServiceNote .ServiceNoteR{
+	width: 548px;
+	float: left;
+	min-height: 58px;
+}
+/*地址*/
+.ServiceNoteR .adress{
+	width: 548px;
+	min-height: 40px;
+	float: left;
+}
+.adress .adressL{
+	min-width: 145px;
+	min-height: 30px;
+	float: left;
+	border: 1px solid #CCCCCC;
+	margin-right: 20px;
+	position: relative;
+}
+.adressL .adressContent{
+	min-height:30px;
+	min-width: 145px;
+	text-align: center;
+	line-height: 30px;
+}
+.adressContent span{
+	margin:0 5px;	
+}
+/*地址选择*/
+.adressL .adressHover{
+	display: none;
+}
+
+.adress .adressR{
+	min-width: 310px;
+	min-height: 30px;
+	float: left;
+	/*border: 1px solid #CCCCCC;*/
+	line-height: 30px;
+	position: relative;
+}
+.adress .adressR em{
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: 8px;
+    cursor: pointer;
+    background: #fc600c;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+}
+.adressR em:hover i{
+	display: block;
+	background: white;
+}
+.adressR i{
+     display: none; 
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    left: -285px;
+    top: 37px;
+    z-index: 20;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+/*邮费*/
+.ServiceNoteR .postage{
+	width: 548px;
+	min-height: 40px;
+	float: left;
+}
+
+/*商品编码*/
+.mainDR .shopNum{
+	height: 30px;
+	width: 700px;
+	border-bottom: 1px solid #717171;
+	float: left;
+}
+/*右边编码*/
+ .shopNum .shopNumR{
+ 	height: 30px;
+ 	min-width: 100px;
+ 	line-height: 30px;
+ }
+/*选择手机型号*/
+.mainDR .chooseModel{
+	width: 700px;
+	min-height: 130px;
+	float: left;
+	margin-top: 16px;
+}
+.chooseModel dl{
+	min-width: 605px;
+	min-height: 30px;
+	float: left;
+	margin-bottom: 10px;
+}
+.chooseModel dl a{
+	display: block;
+	width: 98px;
+	height: 40px;
+	float: left;
+}
+.chooseModel dl img{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 4px;
+}
+.chooseModel dl p{
+	float: left;
+	line-height: 40px;
+	margin-left: 5px;
+}
+.chooseModel dl li{
+	float: left;
+	border: 1px solid #717171;
+	margin-right: 10px;
+	min-width: 80px;
+	min-height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.chooseModel dl li:hover{
+	border: 1px solid #CCCCCC;
+}
+/*保障服务*/
+/*.chooseModel .Service li{
+	background: red;
+}*/
+/*推荐*/
+.chooseModel .recommend li{
+	background:#f5f5f5 ;
+}
+.chooseModel .recommend li:hover{
+	border: 1px solid #717171;
+}
+.chooseModel .recommend li:hover a{
+	color: #ca141d;
+}
+.chooseModel .recommend a{
+	height: 30px;
+	color: #3a3a3a;
+}
+/*已经选择商品*/
+.chooseModel .choosed li{
+	color: #ca141d!important;
+	border: 0;
+	cursor: auto;
+}
+.chooseModel .choosed li:hover{
+	border: 0;
+}
+/*加入购物车*/
+.chooseModel dl .num{
+	width: 65px;
+	height: 46px;
+	border: 1px solid #717171;
+	float: left;
+}
+dl .num .textNum{
+	float: left;
+	text-align: center;
+	height: 46px;
+	width: 44px;
+	border: 0;
+	border-right: 1px solid #717171;
+}
+dl .num p{
+	float: left;
+	height: 46px;
+	width: 20px;
+	margin: 0;
+}
+.num p span{
+	display:block;
+	height: 22px;
+	width: 21px;
+	line-height: 22px;
+	text-align: center;
+}
+.num p span:first-child{
+	border-bottom: 1px solid #717171;
+}
+.chooseModel dl button{
+	float: left;
+	width: 172px;
+	height: 46px;
+	border: 0;
+	margin: 0 10px;
+	border-radius: 5px;
+	color: white;
+	
+}
+.chooseModel dl .shopCar{
+	background: #fc600c;
+	cursor: pointer;
+}
+.chooseModel dl .order{
+	background: #ca151d;
+}
+
+		/*商品详情 规格参数 包装与售后 用户评价(2831)*/
+.proDetails .proDetailsTop{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.proDetailsTop a{
+	display: block;
+	border-bottom: 2px solid saddlebrown;
+	min-width: 50px;
+	float: left;
+	padding: 0 10px;
+	margin-right: 50px;
+	font-size: 18px;
+	height: 30px;
+	color: #a4a4a4;
+}
+/*详情展示*/
+.proDetails .proDetailsButtom{
+	min-height: 500px;
+	width: 1200px;
+	margin: 0 auto;
+
+}
+.proDetailsButtom .Details{
+	min-height: 100px;
+	width: 1200px;
+	background: skyblue;
+	margin-bottom: 10px;
+}

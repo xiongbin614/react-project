@@ -1,0 +1,382 @@
+
+/*导航栏banner*/
+.nav{
+	height: 41px;
+	padding: 18px 0 15px 0;
+   -moz-box-shadow:0px 10px 12px #f9f9f9; -webkit-box-shadow:0px 10px 12px #f9f9f9; box-shadow:0px 10px 12px #f9f9f9;
+	min-width: 1200px;
+}
+.nav .navMain{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+
+}
+.navMain .navLeft{
+	float: left;
+	line-height: 40px;
+	
+}
+.navLeft .logo,.navLeft .logoCenter{
+	float: left;
+}
+.navLeft .logo{
+	margin-right: 33px;
+}
+.navLeft .logoCenter .navCenter{
+	float: left;
+	margin-right: 24px;
+	z-index: 555;
+}
+.navCenter a:first-of-type{
+	font-size: 16px;
+	color: #333;
+}
+.navLeft .logoCenter .navCenter:hover {
+	border-bottom: 2px solid crimson;
+}
+.navMain .navRight{
+	float: right;
+	width: 320px;
+	height: 30px;
+	border-radius: 20px;
+	position: relative;
+}
+
+.navRight .serchFrom{
+	width: 320px;
+	height: 30px;
+	border-radius: 20px;
+	background:#f5f5f5 ;
+}
+.navRight .serchKey{
+	position: absolute;
+	max-width: 260px;
+	left: 200px;
+	color: #CF0A2C;
+	top: 6px;
+}
+.serchFrom .text{
+	width: 280px;
+	margin-left: 10px;
+	height: 30px;
+	background: #f5f5f5;
+	border: 0;
+	float: left;
+	height: 30px;
+	outline: none;
+}
+.serchFrom .submit{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	float: left;
+}
+
+
+
+/*mian商品展示*/
+.flMain{
+	min-height: 800px;
+	min-width: 1200px;
+	margin-top: 20px;
+	
+	/*background: red;*/
+}
+.flMain .flMain-nav{
+	height: 28px;
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 28px;
+	margin-bottom: 10px;
+}
+.flMain .flMain-bar{
+	width: 1200px;
+	height: 103px;
+	margin: 0 auto;
+	border: 1px solid #dedede;
+	line-height: 51px;
+	margin-bottom: 20px;
+}
+.flMain .flMain-bar .flMain-class{
+	height: 50%;
+	width: 1200px;
+	border-bottom: 1px solid #dedede;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+.flMain-bar span{
+	margin-right: 20px;
+}
+.flMain-bar .flMain-class a{
+	margin-right: 20px;
+}
+.flMain .flMain-bar .flMain-sort{
+	width: 1200px;
+	padding-left: 30px;
+	height: 50%;
+}
+.flMain-bar .flMain-sort a{
+	margin-right: 20px;
+}
+
+/*手机展示*/
+.flMain .flMain-show{
+	width: 1200px;
+	min-height: 800px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+}
+.flMain .flMain-show li{
+	width: 224px;
+	height: 364px;
+	border: 1px solid #dedede;
+	text-align: center;
+	padding-top: 38px;
+	float: left;
+	margin-right: 17.5px;
+	margin-bottom: 20px;
+	
+}
+.flMain .flMain-show li:nth-child(5n){
+	margin: 0;
+}
+.flMain .flMain-show li:hover{
+	border: 1px solid crimson;
+}
+.flMain .flMain-show img{
+	width: 180px;
+	height: 180px;
+}
+.flMain .flMain-show p:nth-of-type(2){
+	margin-top: 24px ;
+	min-height: 38px;
+	line-height: 16px;
+}
+.flMain .flMain-show p:nth-of-type(3){
+	min-height: 60px;
+	line-height: 30px;
+	margin-bottom:29px;
+	color: crimson;
+}
+/*选购评价*/
+.flMain .flMain-show .p-button{
+	width: 100%;
+	height: 32px;
+	border-top: 1px solid #dedede;
+	line-height: 33px;
+}
+.flMain-show .p-button .choosebuy{
+	width: 49%;
+	height: 100%;
+	border-right: 1px solid #dedede;
+	float: left;
+	color: crimson;
+}
+.flMain-show .p-button .choosebuy:hover{
+	background: crimson;
+	color: white;
+}
+.flMain-show .p-button .evaluate{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+/*nav的hover效果*/
+.logoCenter li{
+	position: relative;
+}
+.logoCenter:hover .navHover{
+	display: block;
+}
+.logoCenter .navHover{
+	width: 100%;
+	height: 250px;
+	position: absolute;
+	background: white;
+	left:0;
+	top: 114px;
+	z-index: 500;
+	border-top: 1px solid #CCCCCC;
+	box-shadow:0px 39px 4px -38px #ccc;
+	border-bottom: 1px solid #f5f5f5;
+	display: none;
+}
+.logoCenter .fl-nav{
+	position: absolute;
+	width: 1200px;
+	min-height: 200px;
+	background: blue;
+	padding-top: 12px;
+	display: none;
+	top: 44px;
+}
+/*手机专区*/
+.logoCenter .fl-iphone{
+	left: -238px;
+	background: white;
+	/*display: block;*/
+}
+.logoCenter  .fl-top{
+	min-height: 30px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 30px;
+	border-top: 1px solid #CCCCCC;
+	float: left;
+
+}
+.fl-top  .fl-topL{
+	 min-height: 30px;
+	min-width: 50px;
+	float: left;
+}
+.logoCenter .fl-top  .fl-topL a{
+	color: #3a3a3a;
+}
+.logoCenter  .fl-top a:hover{
+	color:#e01d20 ;
+}
+
+.fl-top .fl-topR{
+	 min-height: 30px;
+	
+	width:70%;
+	float: left;
+}
+.logoCenter  .fl-top a{
+	color: #717171;
+	float: left;
+	padding: 0 15px;
+	display: block;
+}
+.logoCenter  .fl-buttom{
+	min-height: 40px;
+	width: 100%;
+	float: left;
+}
+.logoCenter  .fl-buttom img{
+	height: 120px;
+	width: 120px;
+}
+
+.logoCenter  .fl-buttom li p{
+	font-size: 14px;
+	color: #3a3a3a;
+	line-height: 20px;
+}
+.logoCenter  .fl-buttom li p span{
+	color:#cc0e11 ;
+}
+.logoCenter  .fl-buttom li{
+	width: 14.28%;
+	min-height: 175px;
+	float: left;
+	text-align: center;
+	padding-top: 14px;
+
+}
+.logoCenter  .fl-buttom li a{
+	display: block;
+	height: 100%;
+	width: 120px;
+	margin: auto;
+}
+.fl-buttom a:hover p{
+	color: #cc0e11;
+}
+
+.logoCenter  .fl-buttom  a p:nth-child(2){
+	margin-top: 10px;
+}
+
+.flNav li:first-child:hover .fl-iphone{
+	display: block;
+}
+/*笔记本电脑*/
+.logoCenter .fl-ipad{
+	left: -294px;
+	/*display: block;*/
+	
+}
+.flNav li:nth-child(2):hover .fl-ipad{
+	display: block;
+	background: white;
+}
+
+/*智能穿戴*/
+.logoCenter .fl-wear{
+	left: -408px;
+	/*display: block;*/
+}
+.flNav li:nth-child(3):hover .fl-wear{
+	display: block;
+	background: white;
+}
+/*智能家居*/
+.logoCenter .fl-home{
+	left: -496px;
+	/*display: block;*/
+}
+.flNav li:nth-child(4):hover .fl-home{
+	display: block;
+	background: white;
+}
+/*通用配件*/
+.logoCenter .fl-ipod{
+	left: -584px;
+	/*display: block;*/
+	
+}
+.flNav li:nth-child(5):hover .fl-ipod{
+	display: block;
+	background: white;
+}
+/*专属配件*/
+.logoCenter .fl-exclusive{
+	left: -672px;
+/*display: block;*/
+}
+.flNav li:nth-child(6):hover .fl-exclusive{
+	display: block;
+	background: white;
+}
+/*右边悬浮购物车*/
+.hungBar-content{
+	position: fixed;
+	right: 0;
+	bottom:20px;
+	width: 38px;
+	height: 166px;
+}
+.hungBar-content li{
+	height: 41px;
+	width: 38;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+}
+.hungBar-content li a i{
+	font-size: 24px;
+}
+.hungBar-content li p{
+	display: none;
+	position: absolute;
+	border: 1px solid salmon;
+	border-radius: 5px;
+	left: -66px;
+	width: 58px;
+	height: 36px;
+	top: 0;
+	text-align: center;
+	
+}
+.fhtop{
+	display: none;
+}
+.hungBar-content li:hover p{
+	display: block;
+}

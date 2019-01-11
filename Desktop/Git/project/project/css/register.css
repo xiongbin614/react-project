@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	height: 67px;
+	min-width: 960px;
+	background: #333333;
+	line-height: 67px;
+}
+.header .head{
+	width: 960px;
+	margin: 0 auto;
+	
+}
+.head h1{
+	width: 143px;
+	float: left;
+	margin-right: 20px;
+}
+.head b{
+	color: white;
+	font-size: 18px;
+	margin-top: -5px;
+	margin-right: 20px;
+	float: left;
+}
+.main{
+	height: 708px;
+	background: #f2f2f2;
+	width: 100%;
+	padding-top: 30px;
+}
+.main .register-content{
+	width: 960px;
+	height: 708px;
+	margin: 0 auto;
+	background: white;
+
+}
+.reg-tab{
+	width: 960px;
+	height: 35px;
+	background: #f2f2f2;
+	/*margin-top: 30px;*/
+
+}
+.reg-tab .iphone a{
+	background: #B40707;
+	display: inline-block;
+	height: 35px;
+	width: 146px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	margin-right: 12px;
+}
+.reg-tab .email a{
+	background: #b7b7b7;
+		display: inline-block;
+	height: 35px;
+	width: 146px;
+	float: left;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	margin-right: 12px;
+}
+.reg-tab .login{
+	float: right;
+	line-height: 35px;
+}
+.input-container{
+	width: 420px;
+	height: 44px;
+	border-radius: 21px;
+	border: 1px solid #d9d9d9;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: #f7f7f7;
+	margin-top: 10px;
+	/*text-align: center;*/
+	line-height: 44px;
+	position: relative;
+}
+.inputLeft{
+	width: 90px;
+	float: left;
+	padding: 0 16px;
+	height: 100%;
+	border-right: 1px solid #d9d9d9;
+}
+.inputRight{
+	height: 44px;
+	width: 260px;
+	cursor: pointer;
+	float: left;
+	padding-left: 18px;
+}
+/*点击验证*/
+.yanzheng{
+	padding-left: 12px;
+	cursor: pointer;
+}
+.yanzheng i{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: blue;
+	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+/*短信验证*/
+.random input{
+	border: 0;
+	height:41px;
+	width: 164px;
+	background: #f7f7f7;
+	outline: none;
+}
+/*输入手机号*/
+.iptIpNum{
+	float: left;
+	border: 0;
+	height: 100%;
+	width: 270px;
+	margin-left: 10px;
+	outline: none;
+	background: #f7f7f7;
+}
+/*提示输入情况*/
+.hint{
+	position: absolute;
+	top:0;
+	left: 430px;
+	/*height: 30px;*/
+	min-width: 260px;
+	background: red;
+	display: none;
+	border-radius: 10px;
+}
+/*注册按钮*/
+.sub{
+	width: 200px;
+	height: 40px;
+	border-radius: 20px;
+	border: 0;
+	margin: 0 auto;
+	display: block;
+	margin-top: 30px;
+	/*background: #C70000;*/
+	color: white;
+	cursor: pointer;
+	color: #333333;
+	outline: none;
+	background: #cccccc;
+	
+}
+/*尾部*/
+.loginFooter{
+	min-height: 42px;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+}
+.loginFooter .loginFoot{
+	padding-top: 20px;
+}
+.loginFoot p:first-child{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+.loginFoot p:first-child a{
+	display: block;
+	padding: 0 10px;
+	border-right: 1px solid black;
+	font-size: 12px;
+}
+.loginFoot p:nth-child(2){
+	margin-bottom: 20px;
+}
+/*注册成功和失败弹窗*/
+.alert{
+	width: 500px;
+	height: 300px;
+	background:#A4A4A4;
+	opacity: 0.9;
+	border: 1px solid #CCCCCC;
+	position: fixed;
+	font-size: 24px;
+	left: 50%;
+	top:50%;
+	line-height: 300px;
+	margin-left: -250px;
+	margin-top: -150px;
+	border-radius: 40px;
+	z-index: 5000;
+	text-align: center;
+	display: none;
+}
+
